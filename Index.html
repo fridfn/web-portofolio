@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/ionicons@5.5.3/dist/ionicons/ionicons.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> <!-- Optional Favicon -->
+</head>
+<body>
+
+<!-- Light/Dark Mode Toggle -->
+<button id="modeToggleBtn">Toggle Dark Mode</button>
+
+<!-- Preloader -->
+<div id="preloader" class="preloader">
+    <div class="spinner"></div>
+</div>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="container">
+        <div id="hamburgerMenu" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navMenu">
+            <ul>
+             <div class='hero-icons'>
+              <img src='depulz.jpg' alt='img' class='icons'/>
+             </div>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li> <!-- Added new section -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="logo">My Portfolio</div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My <span class="highlight">Portfolio</span></h1>
+        <p>I'm a passionate developer creating modern web experiences.</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+    <div class="hero-image">
+        <img src="depulz.jpg" alt="Hero Image">
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web developer with expertise in modern frontend technologies. I love designing
+        engaging and responsive user interfaces, and solving problems efficiently. My goal is to create seamless
+        user experiences while continuously learning and improving my skills.
+    </p>
+    <p>
+        I am currently working with technologies like HTML5, CSS3, JavaScript, React, and Node.js to build
+        innovative and user-friendly web applications.
+    </p>
+</section>
+
+<!-- Skills Section --><section class="skills" id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <p>Here are some of the skills I have acquired over the years:</p>
+
+        <div class="skill-board">
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>HTML</h3>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-bar">
+                    <div class="progress" style="width: 75%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+             
+                <div class="skill-name">
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-bar">
+                    <div class="progress" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>React</h3>
+                    <p>Intermediate</p>
+                </div>
+                <div class="skill-bar">
+                    <div class="progress" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>Node.js</h3>
+                    <p>Beginner</p>
+                </div>
+                <div class="skill-bar">
+                    <div class="progress" style="width: 50%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">
+                    <h3>Python</h3>
+                    <p>Advanced</p>
+                </div>
+                <div class="skill-bar">
+                    <div class="progress" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>A dynamic web application built with React and Node.js, providing real-time data.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>An e-commerce platform developed using React and Redux for state management.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>A portfolio website built with HTML, CSS, and JavaScript showcasing my work.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to work together or have any questions, feel free to send me a message.</p>
+    <form id="contactForm" action="#">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Scroll-to-top button -->
+<button id="scrollToTopBtn">
+   <ion-icon name="chevron-up"></ion-icon>
+</button>
+
+<!-- Tambahkan AOS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+<script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
