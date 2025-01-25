@@ -139,6 +139,17 @@ body.dark-mode {
     .hamburger-menu {
         display: none;
     }
+    .hero-icons {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        position: static;
+    }
+    .hero-icons img {
+        padding: 10px;
+        border-radius: 10px;
+        border: 4px solid #007BFF;
+    }
 }
 
 /* Hero Section */
@@ -365,9 +376,15 @@ img {
 }
 
 /* Hero Image (Responsive for Both Mobile and Desktop) */
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ 
 .hero-image img {
-    max-width: 100%;
     height: auto;
+    display: flex;
     border-radius: 15px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -411,21 +428,31 @@ img {
     .hero-image img {
         max-width: 90%;
     }
-
     .project-card img {
         max-width: 100%;
     }
-
     .about img {
         width: 100%;
         height: auto;
+    }
+    
+    .hero-icons {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        left: 50px;
+        position: relative;
+    }
+    .hero-icons img {
+        padding: 10px;
+        border-radius: 10px;
     }
 }
 
 /* Desktop View Specific (Image Sizing) */
 @media (min-width: 769px) {
     .hero-image img {
-        max-width: 50%;
+        width: 50%;
     }
 
     .project-card img {
@@ -581,6 +608,8 @@ body.dark-mode {
     list-style: none;
     display: flex;
     gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar nav ul li a {
@@ -634,7 +663,7 @@ body.dark-mode {
         left: 0;
     }
     
-    .hero-icons {
+    .-icons {
      width: 85px; /* atur tinggi dan lebar icon*/;
      height: 85px;
      margin-top: 70px;
@@ -723,7 +752,6 @@ body.dark-mode {
 }
 
 .hero-image img {
-    max-width: 50%;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
